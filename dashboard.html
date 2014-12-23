@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="dashboard.css" />
+<link href="tab-content/template1/tabcontent.css" rel="stylesheet" type="text/css" />
+<script src="tab-content/tabcontent.js" type="text/javascript"></script>
+<script type="text/javascript" src = "dashboard.js"></script>
+<body>
+<div class = "a"></div>
+<div id="header">Virtual Labs' Dashboard 
+ <div id = "login"><button type="button" onclick="Log in">Log In</button></div>
+ <div class = "vlabsIcon" > </div>
+ <!-- <label>Select discipline:</label> -->
+
+ <div>
+ </div>
+ <ul class="tabs">
+ 	<li><a href="#view4">Search</a></li>
+    <li><a href="#view1">Labs</a></li>
+    <li><a href="#view2">Institutes</a></li>
+    <li><a href="#view3">Discipline</a></li>
+ </ul>
+
+ <div class="tabcontents">
+    <div id="view1">
+       <form>
+          Lab Name:<input type="text" name="firstname"><br>
+          <br>Developer Name: <input type="text" name="Developer name"><br>
+          <br> Select institute name: 
+
+          <select name = "Select Institute">
+     <option value="">All institutes</option>
+             <option value="Amritha University">Amritha University</option>
+             <option value="COEP">COEP</option>
+             <option value="Dayalbagh">Dayalbagh</option>
+             <option value="IIIT-H">IIIT-H</option>
+             <option value="IIT-Bombay">IIT-Bombay</option>
+             <option value="IIT-Delhi">IIT-Delhi</option>
+             <option value="IIT-Guwahati">IIT-Guwahati</option>
+             <option value="IIT-Kanpur">IIT-Kanpur</option>
+             <option value="IIT-Kharagpur">IIT-Kharagpur</option>
+             <option value="IIT-Madras">IIT-Madras</option>
+             <option value="IIT-Roorkee"> 	IIT-Roorkee</option>
+             <option value="NIT-K">NIT-K</option>
+          </select><br>
+           <br> Select discipline name:
+           <select name = "Select Discipline">
+     <option value="">All disciplines</option>
+             <option value="Aerospace Engineering">Aerospace Engineering</option>
+             <option value="Biotechnology and Biomedical Engineering">Biotechnology and Biomedical Engineering</option>
+             <option value="Chemical Engineering">Chemical Engineering</option>
+             <option value="Chemical Sciences">Chemical Sciences</option>
+             <option value="Civil Engineering">Civil Engineering</option>
+             <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+             <option value="Electrical Engineering">Electrical Engineering</option>
+             <option value="Electronics & Communications">Electronics & Communications</option>
+             <option value="Humanities">Humanities</option>
+             <option value="Mechanical Engineering"> 	Mechanical Engineering</option>
+             <option value="Physical Sciences">Physical Sciences</option>
+             <option value="Textile Department">Textile Department</option>
+          </select><br>
+
+          <br>Status:
+          <select name = "Select Discipline">
+     <option value=""></option>     
+     <option value="Hosted">Hosted</option>
+     <option value="Hosted">Not Hosted</option>
+     </select><br>
+
+     <br>Sources Available:
+     <select name = "Sources Available">
+     <option value=""></option> 
+     <option value="Yes">Yes</option>
+     <option value="No">No</option>
+     </select><br>
+
+     <br>Integration Level:
+     <select name = "Integration Level">
+     <!-- <option value=""></option> -->
+     <option value=""></option>
+     <option value="0">0</option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+     </select><br>
+     <br><button type="button">Get labs</button>
+    </div>
+
+    </form> 
+ </div>
+ <div class="tabcontents">
+ <div id="view4">
+ <form>
+ <div>
+ 	<br> Select institute name: 
+
+          <select name = "Select Institute">
+     <option value="">All institutes</option>
+             <option value="Amritha University">Amritha University</option>
+             <option value="COEP">COEP</option>
+             <option value="Dayalbagh">Dayalbagh</option>
+             <option value="IIIT-H">IIIT-H</option>
+             <option value="IIT-Bombay">IIT-Bombay</option>
+             <option value="IIT-Delhi">IIT-Delhi</option>
+             <option value="IIT-Guwahati">IIT-Guwahati</option>
+             <option value="IIT-Kanpur">IIT-Kanpur</option>
+             <option value="IIT-Kharagpur">IIT-Kharagpur</option>
+             <option value="IIT-Madras">IIT-Madras</option>
+             <option value="IIT-Roorkee"> 	IIT-Roorkee</option>
+             <option value="NIT-K">NIT-K</option>
+          </select><br>
+ </div>
+ <div>
+      <br> Select discipline name:
+           <select name = "Select Discipline">
+     <option value="">All disciplines</option>
+             <option value="Aerospace Engineering">Aerospace Engineering</option>
+             <option value="Biotechnology and Biomedical Engineering">Biotechnology and Biomedical Engineering</option>
+             <option value="Chemical Engineering">Chemical Engineering</option>
+             <option value="Chemical Sciences">Chemical Sciences</option>
+             <option value="Civil Engineering">Civil Engineering</option>
+             <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+             <option value="Electrical Engineering">Electrical Engineering</option>
+             <option value="Electronics & Communications">Electronics & Communications</option>
+             <option value="Humanities">Humanities</option>
+             <option value="Mechanical Engineering"> 	Mechanical Engineering</option>
+             <option value="Physical Sciences">Physical Sciences</option>
+             <option value="Textile Department">Textile Department</option>
+          </select><br>
+
+ </div>
+ <div id="something">
+       <br> Select Attributes:
+           <select name = "Select Attribute">
+     <option  id="None" value="">None</option>   
+     <option id="status" value="status">Status</option>  
+     <option id="int_level" value="integration_level">Integration level</option>   
+     <option id="source_avail" value="sources_available">Sources Available</option> </select>  
+ </div>
+
+
+
+ <div id="status_id" class="status_hide"><br>Status:
+          <select name = "Select Discipline">
+     <option value=""></option>     
+     <option value="Hosted">Hosted</option>
+     <option value="Hosted">Not Hosted</option>
+     </select><br></div>
+ 
+
+ <div id="integration_level_id" class="inte_hide"><br>Integration Level:
+     <select name = "Integration Level">
+     <!-- <option value=""></option> -->
+     <option value=""></option>
+     <option value="0">0</option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+     </select><br></div>
+ 
+
+ <div id="source_avail_id" class="source_hide"><br>Sources Available:
+     <select name = "Sources Available">
+     <option value=""></option> 
+     <option value="Yes">Yes</option>
+     <option value="No">No</option>
+     </select><br></div>
+
+     <button type="button" onclick="add(document.forms[0].element.value)">Add attribute</button>&nbsp<br>
+
+       <br><button type="button">Search</button>&nbsp
+       <!-- <button type="button">Add attributes</button> -->
+
+ </div>
+ </form>
+ <div id="view2"> content 2 </div>
+ <div id="view3"> content 3 </div>
+
+</div>
+</body>
+</html>
