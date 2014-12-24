@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head><title> Data services </title></head>
+	<link rel = 'stylesheet' type = 'text/css' href = '../static/a.css' />
+	<script type = 'text/javascript' src = '../static/a.js' ></script>
+	<body>
+		<div id = 'header' > Data Services </div>
+		<div class = 'vlabsIcon' ></div>
+		<div class = 'lab_deploy_status' >
+			<button class = 'lab_depl_status_class','button' id = 'lab_depl_status_id' onclick = 'getframe()'> Labs Deployed </button>
+		</div>
+		<div class = 'DataService2' > <button class = 'lab_depl_status_class' > Data Service 2 </button></div>
+		<div class = 'class_for_frameDiv' id = 'id_for_frameDiv' >
+			<div class="first">	<label id = "lab-id"> Enter Lab Id: </label>
+<input type="text" id = "labelid" name="fname" class = "text-class" value=""/>
+</div>
+<div class="second"> <button class="ds1" id = "status_id" onclick = "status()"> Status</button> </div>
+<div class="third"> <button class="ds1" id = "" onclick = "aive()"> Refresh </button> </div>
+
+			
+		</div>
+	</body>
+</html>	
